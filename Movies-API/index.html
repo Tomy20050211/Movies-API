@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+   
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-gray-100 w-full h-full" id="container"></div>
+
+  <div class="flex justify-center gap-4 my-6">
+  <button id="prev"
+    class="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 bg-indigo-600 hover:bg-indigo-700 transition
+                     cursor-pointer mt-auto px-6 py-2
+                     font-medium rounded-md text-white text-sm">
+    Anterior
+  </button>
+
+  <span id="page" class="font-semibold text-lg"></span>
+
+  <button id="next"
+    class="px-4 py-2 bg-gray-300 rounded bg-indigo-600 hover:bg-indigo-700 transition
+                     cursor-pointer mt-auto px-6 py-2
+                     font-medium rounded-md text-white text-sm">
+    Siguiente
+  </button>
+</div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
